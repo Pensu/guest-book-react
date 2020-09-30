@@ -59,7 +59,7 @@ export default function App() {
     >
       <div className="max-w-xl mx-auto px-10 py-20">
         {/* header title */}
-        <h1 className="mb-32 text-white text-center">
+        <h1 className="mb-20 text-white text-center">
           <span className="block text-2xl opacity-75">
             Welcome to the App Platform
           </span>
