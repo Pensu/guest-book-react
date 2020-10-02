@@ -6,22 +6,10 @@ import { getMessages } from "./api-stuff";
 import "./App.css";
 
 export default function App() {
-  const [messages, setMessages] = useState([]);
-
-  useEffect(() => {
-    getMessages().then(setMessages);
-  }, []);
-
-  function addMessage(message) {
-    setMessages([message, ...messages]);
-  }
-
   return (
     <div className="app min-h-screen bg-center">
       <div className="max-w-xl mx-auto px-10 py-20">
         <Header />
-        <MessageForm addMessage={addMessage} />
-        <Messages messages={messages} />
       </div>
     </div>
   );

@@ -14,16 +14,20 @@ export default function MessageForm({ addMessage }) {
   }
 
   return (
-    <form className="mb-10 flex" onSubmit={handleSubmit}>
-      <input
-        className="flex-grow rounded-l-lg bg-white outline-none focus:outline-none p-4"
-        type="text"
-        onChange={(e) => setText(e.target.value)}
-        value={text}
-      />
-      <button className="flex-shrink bg-yellow-400 text-yellow-800 rounded-r-lg py-4 px-6">
-        Add Message
-      </button>
-    </form>
+    <>
+      {/* message form */}
+      <p className="mb-3 text-xl text-white">Write a message!</p>
+      <form className="mb-10 flex" onSubmit={handleSubmit}>
+        <input
+          className="flex-grow rounded-l-lg bg-white outline-none focus:outline-none p-4"
+          type="text"
+          onChange={(e) => setText(e.target.value)}
+          value={text}
+        />
+        <button className="flex-shrink bg-yellow-400 text-yellow-800 rounded-r-lg py-4 px-6">
+          Add Message
+        </button>
+      </form>
+    </>
   );
 }
