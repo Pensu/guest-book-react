@@ -1,0 +1,5 @@
+@import url("https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css");
+
+.app {
+  background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
+}
